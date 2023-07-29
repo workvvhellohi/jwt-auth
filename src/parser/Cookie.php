@@ -1,9 +1,9 @@
 <?php
 
 
-namespace thans\jwt\parser;
+namespace workvvhellohi\jwt\parser;
 
-use thans\jwt\contract\Parser as ParserContract;
+use workvvhellohi\jwt\contract\Parser as ParserContract;
 use think\Request;
 
 class Cookie implements ParserContract

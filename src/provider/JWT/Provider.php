@@ -1,9 +1,9 @@
 <?php
 
 
-namespace thans\jwt\provider\JWT;
+namespace workvvhellohi\jwt\provider\JWT;
 
-use thans\jwt\exception\JWTException;
+use workvvhellohi\jwt\exception\JWTException;
 
 class Provider
 {

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace thans\jwt\middleware;
+namespace workvvhellohi\jwt\middleware;
 
 use think\Request;
-use thans\jwt\provider\JWT as JWTProvider;
+use workvvhellohi\jwt\provider\JWT as JWTProvider;
 
 class InjectJwt
 {

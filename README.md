@@ -2,7 +2,7 @@
 <h1><p align="center">JWT-AUTH</p></h1>
 <p align="center"> thinkphp的jwt（JSON Web Token）身份验证包。支持Header、Cookie、Param等多种传参方式。包含：验证、验证并且自动刷新等多种中间件。</p>
 
-[thinkphp6.0的demo下载](https://gitee.com/thans/jwt-auth/attach_files/306748/download)
+[thinkphp6.0的demo下载](https://gitee.com/workvvhellohi/jwt-auth/attach_files/306748/download)
 
 ## 支持Swoole
 
@@ -45,7 +45,7 @@
 第一步:
 
 ```shell
-$ composer require thans/tp-jwt-auth
+$ composer require workvvhellohi/tp-jwt-auth
 ```
 
 
@@ -62,13 +62,13 @@ $ php think jwt:create
 
 对于需要验证的路由或者模块添加中间件：
 ```php
- thans\jwt\middleware\JWTAuth::class,
+ workvvhellohi\jwt\middleware\JWTAuth::class,
 ```
 
 示例：
 
 ```php
-use thans\jwt\facade\JWTAuth;
+use workvvhellohi\jwt\facade\JWTAuth;
 
 $token = JWTAuth::builder(['uid' => 1]);//参数为用户认证的信息，请自行添加
 
@@ -87,7 +87,7 @@ token刷新说明：
 > token默认有效期为60秒，如果需要修改请修改env文件。
 > refresh_ttl为刷新token有效期参数，单位为分钟。默认有效期14天。
 > token过期后，旧token将会被加入黑名单。
-> 如果需要自动刷新，请使用中间件  thans\jwt\middleware\JWTAuthAndRefresh::class,
+> 如果需要自动刷新，请使用中间件  workvvhellohi\jwt\middleware\JWTAuthAndRefresh::class,
 > 自动刷新后会通过header返回，请保存好。（注意，此中间件过期后第一次访问正常，第二次进入黑名单。）
 
 
@@ -114,7 +114,7 @@ token传参方式如下：
 
 [打赏名单](SUPPORT.md)
 
-![image](https://img.thans.cn/wechat.jpg)
+![image](https://img.workvvhellohi.cn/wechat.jpg)
 
 ## 参考与借鉴
 

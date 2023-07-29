@@ -1,11 +1,11 @@
 <?php
 
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
-use thans\jwt\command\SecretCommand;
-use thans\jwt\middleware\InjectJwt;
-use thans\jwt\provider\JWT as JWTProvider;
+use workvvhellohi\jwt\command\SecretCommand;
+use workvvhellohi\jwt\middleware\InjectJwt;
+use workvvhellohi\jwt\provider\JWT as JWTProvider;
 
 class Service extends \think\Service
 {

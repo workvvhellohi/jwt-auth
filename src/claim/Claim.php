@@ -1,6 +1,6 @@
 <?php
 
-namespace thans\jwt\claim;
+namespace workvvhellohi\jwt\claim;
 
 abstract class Claim
 {

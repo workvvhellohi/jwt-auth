@@ -1,8 +1,8 @@
 <?php
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
-use thans\jwt\parser\Parser;
+use workvvhellohi\jwt\parser\Parser;
 
 class JWTAuth extends JWT
 {

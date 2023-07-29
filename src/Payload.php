@@ -1,16 +1,16 @@
 <?php
 
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
-use thans\jwt\claim\Factory;
-use thans\jwt\claim\Issuer;
-use thans\jwt\claim\Audience;
-use thans\jwt\claim\Expiration;
-use thans\jwt\claim\IssuedAt;
-use thans\jwt\claim\JwtId;
-use thans\jwt\claim\NotBefore;
-use thans\jwt\claim\Subject;
+use workvvhellohi\jwt\claim\Factory;
+use workvvhellohi\jwt\claim\Issuer;
+use workvvhellohi\jwt\claim\Audience;
+use workvvhellohi\jwt\claim\Expiration;
+use workvvhellohi\jwt\claim\IssuedAt;
+use workvvhellohi\jwt\claim\JwtId;
+use workvvhellohi\jwt\claim\NotBefore;
+use workvvhellohi\jwt\claim\Subject;
 
 class Payload
 {

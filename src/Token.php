@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
 class Token
 {

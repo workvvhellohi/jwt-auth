@@ -1,10 +1,10 @@
 <?php
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
-use thans\jwt\exception\TokenBlacklistException;
-use thans\jwt\exception\TokenBlacklistGracePeriodException;
-use thans\jwt\provider\JWT\Provider;
+use workvvhellohi\jwt\exception\TokenBlacklistException;
+use workvvhellohi\jwt\exception\TokenBlacklistGracePeriodException;
+use workvvhellohi\jwt\provider\JWT\Provider;
 
 class Manager
 {

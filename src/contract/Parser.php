@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\contract;
+namespace workvvhellohi\jwt\contract;
 
 use think\Request;
 

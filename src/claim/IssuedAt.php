@@ -1,9 +1,9 @@
 <?php
 
 
-namespace thans\jwt\claim;
+namespace workvvhellohi\jwt\claim;
 
-use thans\jwt\exception\TokenExpiredException;
+use workvvhellohi\jwt\exception\TokenExpiredException;
 
 class IssuedAt extends Claim
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\parser;
+namespace workvvhellohi\jwt\parser;
 
 trait KeyTrait
 {

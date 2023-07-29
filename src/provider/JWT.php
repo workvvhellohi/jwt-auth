@@ -1,12 +1,12 @@
 <?php
 
 
-namespace thans\jwt\provider;
+namespace workvvhellohi\jwt\provider;
 
-use thans\jwt\facade\JWTAuth;
-use thans\jwt\parser\AuthHeader;
-use thans\jwt\parser\Cookie;
-use thans\jwt\parser\Param;
+use workvvhellohi\jwt\facade\JWTAuth;
+use workvvhellohi\jwt\parser\AuthHeader;
+use workvvhellohi\jwt\parser\Cookie;
+use workvvhellohi\jwt\parser\Param;
 use think\App;
 use think\Container;
 use think\facade\Config;
@@ -31,7 +31,7 @@ class JWT
 
     protected function registerBlacklist()
     {
-        Container::getInstance()->make('thans\jwt\Blacklist', [
+        Container::getInstance()->make('workvvhellohi\jwt\Blacklist', [
             new $this->config['blacklist_storage'],
         ])->setRefreshTTL($this->config['refresh_ttl'])->setGracePeriod($this->config['blacklist_grace_period']);
     }
@@ -47,7 +47,7 @@ class JWT
                 'private' => $this->config['private_key'],
                 'password' => $this->config['password'],
             ];
-        Container::getInstance()->make('thans\jwt\provider\JWT\Lcobucci', [
+        Container::getInstance()->make('workvvhellohi\jwt\provider\JWT\Lcobucci', [
             $this->config['algo'],
             $keys,
         ]);
@@ -55,7 +55,7 @@ class JWT
 
     protected function registerFactory()
     {
-        Container::getInstance()->make('thans\jwt\claim\Factory', [
+        Container::getInstance()->make('workvvhellohi\jwt\claim\Factory', [
             new Request(),
             $this->config['ttl'],
             $this->config['refresh_ttl'],
@@ -64,17 +64,17 @@ class JWT
 
     protected function registerPayload()
     {
-        Container::getInstance()->make('thans\jwt\Payload', [
-            Container::getInstance()->make('thans\jwt\claim\Factory'),
+        Container::getInstance()->make('workvvhellohi\jwt\Payload', [
+            Container::getInstance()->make('workvvhellohi\jwt\claim\Factory'),
         ]);
     }
 
     protected function registerManager()
     {
-        Container::getInstance()->make('thans\jwt\Manager', [
-            Container::getInstance()->make('thans\jwt\Blacklist'),
-            Container::getInstance()->make('thans\jwt\Payload'),
-            Container::getInstance()->make('thans\jwt\provider\JWT\Lcobucci'),
+        Container::getInstance()->make('workvvhellohi\jwt\Manager', [
+            Container::getInstance()->make('workvvhellohi\jwt\Blacklist'),
+            Container::getInstance()->make('workvvhellohi\jwt\Payload'),
+            Container::getInstance()->make('workvvhellohi\jwt\provider\JWT\Lcobucci'),
         ]);
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace thans\jwt;
+namespace workvvhellohi\jwt;
 
-use thans\jwt\contract\Storage;
+use workvvhellohi\jwt\contract\Storage;
 
 class Blacklist
 {

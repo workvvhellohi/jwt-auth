@@ -1,14 +1,14 @@
 <?php
 
-namespace thans\jwt\facade;
+namespace workvvhellohi\jwt\facade;
 
 use think\Facade;
 
 /**
  * Class JWTAuth
  *
- * @package thans\jwt\facade
- * @mixin \thans\jwt\JWTAuth
+ * @package workvvhellohi\jwt\facade
+ * @mixin \workvvhellohi\jwt\JWTAuth
  * @method string builder(array $user = []) static Token构建
  * @method array auth() static Token验证
  * @method string refresh() static Token刷新
@@ -20,6 +20,6 @@ class JWTAuth extends Facade
 {
     protected static function getFacadeClass()
     {
-        return 'thans\jwt\JWTAuth';
+        return 'workvvhellohi\jwt\JWTAuth';
     }
 }

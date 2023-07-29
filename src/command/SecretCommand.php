@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\command;
+namespace workvvhellohi\jwt\command;
 
 use think\console\Input;
 use think\console\Output;

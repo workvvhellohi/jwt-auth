@@ -1,10 +1,10 @@
 <?php
 
 
-namespace thans\jwt\provider\storage;
+namespace workvvhellohi\jwt\provider\storage;
 
 
-use thans\jwt\contract\Storage;
+use workvvhellohi\jwt\contract\Storage;
 use think\facade\Cache;
 
 class Tp6 implements Storage

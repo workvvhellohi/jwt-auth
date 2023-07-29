@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\claim;
+namespace workvvhellohi\jwt\claim;
 
 class Customer extends Claim
 {

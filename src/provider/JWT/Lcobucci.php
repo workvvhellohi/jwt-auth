@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\provider\JWT;
+namespace workvvhellohi\jwt\provider\JWT;
 
 use Exception;
 use Lcobucci\JWT\Configuration;
@@ -22,8 +22,8 @@ use Lcobucci\JWT\Token\RegisteredClaims;
 use Lcobucci\JWT\Validation\Constraint\SignedWith;
 use DateTimeImmutable;
 use DateTimeInterface;
-use thans\jwt\exception\JWTException;
-use thans\jwt\exception\TokenInvalidException;
+use workvvhellohi\jwt\exception\JWTException;
+use workvvhellohi\jwt\exception\TokenInvalidException;
 
 class Lcobucci extends Provider
 {

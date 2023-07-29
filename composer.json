@@ -1,5 +1,5 @@
 {
-    "name": "thans/tp-jwt-auth",
+    "name": "workvvhellohi/tp-jwt-auth",
     "description": "thinkphp jwt auth composer",
     "type": "library",
     "require": {
@@ -10,13 +10,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Thans",
+            "name": "Workvvhellohi",
             "email": "ntbperst@outlook.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "thans\\jwt\\": "src"
+            "workvvhellohi\\jwt\\": "src"
         },
         "files": [
             "src/helper.php"
@@ -25,7 +25,7 @@
     "extra": {
         "think": {
             "services": [
-                "thans\\jwt\\Service"
+                "workvvhellohi\\jwt\\Service"
             ],
             "config": {
                 "jwt": "config/config.php"
